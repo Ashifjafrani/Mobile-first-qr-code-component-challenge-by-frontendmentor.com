@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | QR code component</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Outfit', sans-serif;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      html{
+        scroll-behavior: smooth;
+      
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        background: hsl(212, 45%, 89%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mainc {
+        border-radius: 18px;
+        background: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;height: 500px;padding: 10px;
+       
+      }
+      .head{
+        font-weight: 700;
+        width: 100%;
+        padding: 10px;
+        height: 20%;
+      }
+      .parg{
+        width: 100%;height: 20%;
+        font-weight: 400;font-size: 15px;
+        padding:0px 35px;
+        color: hsl(220, 15%, 55%);
+      }
+
+      .qrimage,.qrimage img{
+        border-radius: 18px;
+      }
+      .qrimage{
+        width: 95%;
+        height: 60%;
+        margin-top: 8px;
+      }
+      img{
+        width: 100%;height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainc">
+      <div class="qrimage">
+        <img src="./images/image-qr-code.png" alt="#" />
+      </div>
+      <div class="head">
+        <h2>Improve your front-end skills by building projects</h2>
+      </div>
+      <div class="parg">
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </div>
+  </body>
+</html>
